@@ -70,6 +70,22 @@ h3 { font-size: 1.55rem; line-height: 1.4; margin-bottom: 20px; letter-spacing: 
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding-block: 36px; }
 .footer-name { font-size: 1.5rem; }
 .site-footer p { font-size: .875rem; margin: 0; }
+/* Article pages reuse the same paper, grain, type and colours as the homepage. */
+.article-page { padding-bottom: 56px; }
+.article-header { max-width: 760px; padding-block: 48px 36px; border-bottom: 1px solid var(--color-ink); }
+.article-header .tag { display: inline-block; margin-bottom: 24px; }
+.article-header h1 { margin-bottom: 20px; }
+.article-intro { max-width: 620px; margin-bottom: 0; font-size: 1.15rem; }
+.article-content { max-width: 760px; }
+.article-section { padding-block: 32px; border-bottom: 1px solid var(--color-ink); }
+.article-section h2, .bottom-line h2, .reel-section h2 { font-size: 1.25rem; margin-bottom: 16px; }
+.article-section p, .bottom-line p, .sources li { max-width: 680px; margin-bottom: 0; }
+.bottom-line { margin-block: 32px; padding: 24px; background: var(--color-sage); border: 1px solid var(--color-ink); }
+.reel-section { padding-block: 32px; }
+.reel-placeholder { display: grid; min-height: 220px; place-items: center; padding: 24px; border: 1px dashed var(--color-ink); background: color-mix(in srgb, var(--color-sage) 45%, var(--color-paper)); font-family: 'Courier Prime', 'Courier New', monospace; font-size: .8rem; letter-spacing: .08em; text-align: center; }
+.back-link { display: inline-block; margin-top: 16px; font-family: 'Courier Prime', 'Courier New', monospace; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; }
+.sources ol { padding-left: 1.5rem; }
+.sources li + li { margin-top: 12px; }
 /* Hidden labels remain readable by assistive technology. */
 .visually-hidden, .skip-link:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .skip-link:focus { display: block; padding: 12px 20px; background: var(--color-ink); color: var(--color-paper); }
