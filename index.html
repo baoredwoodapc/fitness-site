@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Well Actually breaks down health and fitness research in plain English. Less hype. More context.">
+  <title>Well Actually — Less hype. More context.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Courier+Prime:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reuse this header and navigation on future pages. -->
+  <header class="site-header container">
+    <a class="site-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="breakdowns/index.html">Breakdowns</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">WELL, ACTUALLY…<br>LET'S DIG DEEPER</h1>
+        <p class="hero-summary">Nutrition, decoded.<br>Health claims, questioned.<br>Evidence, explained.</p>
+        <a class="button" href="#latest-breakdowns">SEE THE BREAKDOWNS <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="hero-watermark" aria-hidden="true">well<br>actually</span>
+    </section>
+
+    <!-- A single hand-lettered accent, inspired by the Instagram reel cover. -->
+    <div class="brand-interlude" aria-hidden="true">
+      <div class="brand-circle"><span>WELL</span><span>ACTUALLY</span></div>
+      <svg class="wave-divider" viewBox="0 0 1000 180" fill="none" preserveAspectRatio="none">
+        <path d="M0 85 C140 85 135 20 310 22 S510 150 680 148 S830 65 1000 85" />
+      </svg>
+    </div>
+
+    <section class="latest" id="latest-breakdowns" aria-labelledby="latest-title">
+      <div class="section-heading">
+        <h2 id="latest-title">Latest breakdowns</h2>
+        <p>A closer look behind the headlines.</p>
+      </div>
+      <!-- Add future articles inside this grid using the same card structure. -->
+      <div class="card-grid">
+        <article class="breakdown-card">
+          <div class="card-top"><span class="tag">Vitamins</span><span class="card-label">The breakdown</span></div>
+          <h3>Should you take vitamin D this winter?</h3>
+          <p>What a huge trial found, and why it might not apply to you.</p>
+          <a class="read-more" href="breakdowns/vitamin-d.html">Read more <span aria-hidden="true">↗</span><span class="visually-hidden"> about vitamin D this winter</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="instagram" id="instagram" aria-labelledby="instagram-title">
+      <div>
+        <p class="eyebrow">Keep a little context in your feed</p>
+        <h2 id="instagram-title">Follow on Instagram</h2>
+      </div>
+      <!-- Replace this placeholder with the real Instagram profile URL. -->
+      <a class="instagram-link" href="#instagram">Instagram <span class="placeholder">(link coming soon)</span> <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <!-- Reuse this footer, including the disclaimer, on every page. -->
+  <footer class="site-footer container">
+    <a class="footer-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
+    <p>Educational content, not medical advice.</p>
+  </footer>
+</body>
+</html>
