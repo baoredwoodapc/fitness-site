@@ -30,12 +30,21 @@
         <p class="hero-summary">Nutrition, decoded.<br>Health claims, questioned.<br>Evidence, explained.</p>
         <a class="button" href="#latest-breakdowns">SEE THE BREAKDOWNS <span aria-hidden="true">↗</span></a>
       </div>
-      <span class="hero-watermark" aria-hidden="true">well<br>actually</span>
+      <span class="hero-watermark" aria-hidden="true"><span>well</span><span>actually</span></span>
     </section>
 
     <!-- A single hand-lettered accent, inspired by the Instagram reel cover. -->
     <div class="brand-interlude" aria-hidden="true">
-      <div class="brand-circle"><span>WELL</span><span>ACTUALLY</span></div>
+      <div class="brand-circle">
+        <svg class="brand-lettering" viewBox="0 0 300 300" role="presentation" aria-hidden="true">
+          <defs>
+            <path id="brand-top-curve" d="M 38 158 Q 150 45 262 158" />
+            <path id="brand-bottom-curve" d="M 38 142 Q 150 255 262 142" />
+          </defs>
+          <text><textPath href="#brand-top-curve" startOffset="50%" text-anchor="middle">WELL</textPath></text>
+          <text><textPath href="#brand-bottom-curve" startOffset="50%" text-anchor="middle">ACTUALLY</textPath></text>
+        </svg>
+      </div>
       <svg class="wave-divider" viewBox="0 0 1000 180" fill="none" preserveAspectRatio="none">
         <path d="M0 85 C140 85 135 20 310 22 S510 150 680 148 S830 65 1000 85" />
       </svg>
@@ -62,8 +71,7 @@
         <p class="eyebrow">Keep a little context in your feed</p>
         <h2 id="instagram-title">Follow on Instagram</h2>
       </div>
-      <!-- Replace this placeholder with the real Instagram profile URL. -->
-      <a class="instagram-link" href="#instagram">Instagram <span class="placeholder">(link coming soon)</span> <span aria-hidden="true">↗</span></a>
+      <a class="instagram-link" href="https://www.instagram.com/well.actually.info/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
