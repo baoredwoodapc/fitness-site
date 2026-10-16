@@ -26,41 +26,76 @@
   <main id="main" class="container about-page">
     <header class="listing-header">
       <p class="eyebrow">A little context</p>
-      <h1>About Well Actually</h1>
+      <h1>ABOUT WELL ACTUALLY</h1>
       <p>How this project looks at health and fitness research.</p>
     </header>
 
     <div class="about-sections">
-      <!-- Replace the bracketed note with your own bio. -->
       <section class="about-section" aria-labelledby="who-title">
-        <h2 id="who-title">Who I Am</h2>
-        <p>[Add a short bio here.]</p>
+        <h2 id="who-title">WHO WE ARE</h2>
+        <p>[VERIFY: short introduction to the Well Actually project and its purpose.]</p>
       </section>
 
-      <!-- Add only credentials you can verify and want to share publicly. -->
-      <section class="about-section" aria-labelledby="credentials-title">
-        <h2 id="credentials-title">My Credentials</h2>
-        <p>[Add verified qualifications, relevant experience, or explain your background here.]</p>
+      <section class="about-section team-section" aria-labelledby="team-title">
+        <h2 id="team-title">MEET THE TEAM</h2>
+        <div class="team-grid">
+          <a class="team-tile" href="#member-1" data-member-dialog="member-1" aria-haspopup="dialog">
+            <span class="team-photo-frame"><img src="images/team/member-1.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></span>
+            <span class="team-name">[VERIFY: NAME]</span>
+            <span class="team-role">[VERIFY: role] · [VERIFY: credentials]</span>
+          </a>
+          <a class="team-tile" href="#member-2" data-member-dialog="member-2" aria-haspopup="dialog">
+            <span class="team-photo-frame"><img src="images/team/member-2.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></span>
+            <span class="team-name">[VERIFY: NAME]</span>
+            <span class="team-role">[VERIFY: role] · [VERIFY: credentials]</span>
+          </a>
+          <a class="team-tile" href="#member-3" data-member-dialog="member-3" aria-haspopup="dialog">
+            <span class="team-photo-frame"><img src="images/team/member-3.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></span>
+            <span class="team-name">[VERIFY: NAME]</span>
+            <span class="team-role">[VERIFY: role] · [VERIFY: credentials]</span>
+          </a>
+        </div>
       </section>
 
-      <!-- Fill in your approach to each question when preparing a breakdown. -->
-      <section class="about-section" aria-labelledby="method-title">
-        <h2 id="method-title">How I Read a Study</h2>
-        <ul class="study-checklist">
-          <li><strong>Who was studied?</strong> <span>[Add notes here.]</span></li>
-          <li><strong>How many?</strong> <span>[Add the verified sample size here.]</span></li>
-          <li><strong>Was there a control group?</strong> <span>[Add notes here.]</span></li>
-          <li><strong>How long?</strong> <span>[Add the verified study duration here.]</span></li>
-          <li><strong>What are the limitations?</strong> <span>[Add the relevant limitations here.]</span></li>
-        </ul>
-      </section>
-
-      <!-- Replace this placeholder with your reason for choosing the name. -->
       <section class="about-section" aria-labelledby="name-title">
-        <h2 id="name-title">Why “Well Actually”</h2>
-        <p>[Explain why you chose the name and what it means for this project.]</p>
+        <h2 id="name-title">WHY “WELL ACTUALLY”</h2>
+        <p>[VERIFY: explain why the project is called Well Actually and what the name means.]</p>
       </section>
     </div>
+
+    <dialog class="team-dialog" id="member-1" aria-labelledby="member-1-name">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" data-close-dialog>CLOSE ×</button>
+        <div class="dialog-photo-frame"><img src="images/team/member-1.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></div>
+        <h2 id="member-1-name">[VERIFY: NAME]</h2>
+        <p class="dialog-role">[VERIFY: role] · [VERIFY: credentials]</p>
+        <p>[VERIFY: short description of this team member.]</p>
+        <p>[VERIFY: optional second short paragraph about this team member.]</p>
+        <p class="team-fun-fact">WELL, ACTUALLY… [VERIFY: fun fact]</p>
+      </div>
+    </dialog>
+    <dialog class="team-dialog" id="member-2" aria-labelledby="member-2-name">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" data-close-dialog>CLOSE ×</button>
+        <div class="dialog-photo-frame"><img src="images/team/member-2.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></div>
+        <h2 id="member-2-name">[VERIFY: NAME]</h2>
+        <p class="dialog-role">[VERIFY: role] · [VERIFY: credentials]</p>
+        <p>[VERIFY: short description of this team member.]</p>
+        <p>[VERIFY: optional second short paragraph about this team member.]</p>
+        <p class="team-fun-fact">WELL, ACTUALLY… [VERIFY: fun fact]</p>
+      </div>
+    </dialog>
+    <dialog class="team-dialog" id="member-3" aria-labelledby="member-3-name">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" data-close-dialog>CLOSE ×</button>
+        <div class="dialog-photo-frame"><img src="images/team/member-3.jpg" alt="" loading="lazy"><span class="team-initials" aria-hidden="true">[VERIFY: initials]</span></div>
+        <h2 id="member-3-name">[VERIFY: NAME]</h2>
+        <p class="dialog-role">[VERIFY: role] · [VERIFY: credentials]</p>
+        <p>[VERIFY: short description of this team member.]</p>
+        <p>[VERIFY: optional second short paragraph about this team member.]</p>
+        <p class="team-fun-fact">WELL, ACTUALLY… [VERIFY: fun fact]</p>
+      </div>
+    </dialog>
   </main>
 
   <!-- Keep the same footer and educational disclaimer across every page. -->
@@ -68,5 +103,49 @@
     <a class="footer-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
     <p>Educational content, not medical advice.</p>
   </footer>
+  <script>
+    // Missing team photos fall back to the initials shown in the same frame.
+    document.querySelectorAll('.team-photo-frame img, .dialog-photo-frame img').forEach((photo) => {
+      photo.addEventListener('error', () => photo.closest('.team-photo-frame, .dialog-photo-frame').classList.add('is-missing'));
+      if (photo.complete && photo.naturalWidth === 0) {
+        photo.closest('.team-photo-frame, .dialog-photo-frame').classList.add('is-missing');
+      }
+    });
+
+    const teamTiles = document.querySelectorAll('[data-member-dialog]');
+    const teamDialogs = document.querySelectorAll('.team-dialog');
+
+    function openDialogFromHash() {
+      const requestedDialog = document.getElementById(window.location.hash.slice(1));
+      if (requestedDialog?.matches('.team-dialog') && !requestedDialog.open) {
+        requestedDialog.showModal();
+        requestedDialog.querySelector('[data-close-dialog]').focus();
+      }
+    }
+
+    teamTiles.forEach((tile) => {
+      tile.addEventListener('click', (event) => {
+        event.preventDefault();
+        const dialogId = tile.dataset.memberDialog;
+        if (window.location.hash !== `#${dialogId}`) window.location.hash = dialogId;
+        else openDialogFromHash();
+      });
+    });
+
+    teamDialogs.forEach((dialog) => {
+      dialog.querySelector('[data-close-dialog]').addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener('close', () => {
+        if (window.location.hash === `#${dialog.id}`) {
+          history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+        }
+      });
+    });
+
+    window.addEventListener('hashchange', openDialogFromHash);
+    openDialogFromHash();
+  </script>
 </body>
 </html>
