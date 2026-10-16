@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Well Actually research breakdowns by topic.">
+  <title>All Breakdowns — Well Actually</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Courier+Prime:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Keep this shared header consistent across every page. -->
+  <header class="site-header container">
+    <a class="site-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="breakdowns.html" aria-current="page">Breakdowns</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container listing-page">
+    <header class="listing-header">
+      <p class="eyebrow">Research, without the noise</p>
+      <h1>All Breakdowns</h1>
+      <p>Browse the topics, then take a closer look at the evidence.</p>
+    </header>
+
+    <!-- Add new category buttons here when adding matching article cards. -->
+    <div class="filter-bar" role="group" aria-label="Filter breakdowns by topic">
+      <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-button" type="button" data-filter="nutrition" aria-pressed="false">Nutrition</button>
+      <button class="filter-button" type="button" data-filter="fitness" aria-pressed="false">Fitness</button>
+      <button class="filter-button" type="button" data-filter="wellness" aria-pressed="false">Wellness</button>
+    </div>
+
+    <!-- Copy this article card for each new breakdown and set its data-category. -->
+    <div class="card-grid listing-grid" id="breakdown-cards">
+      <article class="breakdown-card" data-category="wellness">
+        <div class="card-top"><span class="tag">Vitamins</span><span class="card-label">The breakdown</span></div>
+        <h2>Should you take vitamin D this winter?</h2>
+        <p>What a huge trial found, and why it might not apply to you.</p>
+        <a class="read-more" href="breakdowns/vitamin-d.html">Read more <span aria-hidden="true">↗</span><span class="visually-hidden"> about vitamin D this winter</span></a>
+      </article>
+    </div>
+    <p class="filter-status" id="filter-status" aria-live="polite" hidden>No breakdowns in this category yet.</p>
+  </main>
+
+  <!-- Keep the same footer and educational disclaimer across every page. -->
+  <footer class="site-footer container">
+    <a class="footer-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
+    <p>Educational content, not medical advice.</p>
+  </footer>
+
+  <!-- Simple topic filter: each card's data-category controls when it appears. -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const breakdownCards = document.querySelectorAll('.breakdown-card[data-category]');
+    const filterStatus = document.querySelector('#filter-status');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedFilter = button.dataset.filter;
+        let visibleCards = 0;
+
+        filterButtons.forEach((item) => {
+          item.setAttribute('aria-pressed', item === button ? 'true' : 'false');
+        });
+
+        breakdownCards.forEach((card) => {
+          const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+          card.hidden = !shouldShow;
+          if (shouldShow) visibleCards += 1;
+        });
+
+        filterStatus.hidden = visibleCards > 0;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -18,7 +18,7 @@
     <a class="site-name" href="index.html" aria-label="Well Actually home"><span>well</span><span>actually</span></a>
     <nav aria-label="Main navigation">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="breakdowns/index.html">Breakdowns</a>
+      <a href="breakdowns.html">Breakdowns</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -66,12 +66,26 @@
       </div>
     </section>
 
-    <section class="instagram" id="instagram" aria-labelledby="instagram-title">
-      <div>
-        <p class="eyebrow">Keep a little context in your feed</p>
-        <h2 id="instagram-title">Follow on Instagram</h2>
+    <section class="feed-section" id="instagram" aria-labelledby="feed-title">
+      <h2 id="feed-title">From the Feed</h2>
+      <div class="feed-grid">
+        <!-- To add a post, copy one .feed-tile block and paste it before .more-tile.
+             Replace its image, alt text, Instagram URL and caption. Keep .more-tile last. -->
+        <a class="feed-tile" href="https://www.instagram.com/p/DeOqAq1DMah/?utm_source=ig_web_copy_link&amp;xtok=MzRlODBiNWFlZA==&amp;srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+          <span class="feed-image-frame"><img src="images/instagram/post-1.jpg.png" alt="Health Diet" loading="lazy"></span>
+          <span class="feed-caption">There’s no single “perfect” diet. But there is a better way to build one.</span>
+        </a>
+
+        <a class="feed-tile" href="https://www.instagram.com/p/DehmZGQDOrT/?utm_source=ig_web_copy_link&amp;exln=MzRlODBiNWFlZA==&amp;srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+          <span class="feed-image-frame"><img src="images/instagram/post-2.jpg.png" alt="Micronutrients" loading="lazy"></span>
+          <span class="feed-caption">Vitamins vs minerals: what’s the difference?</span>
+        </a>
+
+        <a class="feed-tile more-tile" href="https://www.instagram.com/well.actually.info/" target="_blank" rel="noopener noreferrer">
+          <span class="more-square"><span>More<br>Coming Soon</span></span>
+          <span class="feed-caption">@well.actually.info</span>
+        </a>
       </div>
-      <a class="instagram-link" href="https://www.instagram.com/well.actually.info/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
